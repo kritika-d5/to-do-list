@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Inconsolata';
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg,#dfafd5,#804b75);
+}
+
+.todo{
+    width:100%;
+    max-width: 500px;
+    background:#ecd7e7;
+    padding: 20px 30px 50px 30px;
+    border-radius: 10px;
+    margin: auto;
+    border:solid 5px #804b75;
+    min-height: 400px;
+
+}
+
+.todo:hover{
+    border-style: groove;
+}
+
+.main{
+    color: #804b75;
+    font-family: 'Inconsolata';
+    border: whitesmoke;
+    border-width: 5px;
+    text-shadow: 8px;
+    font-size: 40px;
+}
+.icon{
+    height: 60px;
+    width: 50px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #804b75;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.row:hover{
+    background: #733e68;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Inconsolata';
+}
+
+input::placeholder{
+    color: #fdece9;
+}
+
+button{
+    font-family: 'Inconsolata';
+    border: none;
+    outline: none;
+    padding: 16px 16px;
+    background: #dfafd5;
+    color: white;
+    font-size:25px;
+    text-decoration: double;
+    cursor: pointer;
+    border-radius: 30px;
+    border:solid 2px whitesmoke;
+    height: 65px;
+    width: 60px;
+}
+
+button:hover{
+    -webkit-transition: opacity 0.5s ease-in-out;
+    font-size: 30px;
+    font-weight: bolder;
+}
+ul li{
+    list-style: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    word-wrap: normal;
+}
+
+ul li::before{
+    content:' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color:black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li:hover{
+    left:2px;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul li span:hover{
+    background: white;
+}
+
