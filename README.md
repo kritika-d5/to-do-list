@@ -8,4 +8,5 @@ A simple To-Do List application built with **HTML, CSS, and JavaScript**. It all
 - 🏁 Mark tasks as completed
 
 ## 📝 Screenshot
-![To-Do List UI](screenshot/ss.png)
+<img src="screenshot/ss.png" alt="To-Do List UI" width="300">
+
