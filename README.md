@@ -7,5 +7,5 @@ A simple To-Do List application built with **HTML, CSS, and JavaScript**. It all
 - ❌ Delete tasks  
 - 🏁 Mark tasks as completed
 
-##Screenshot
+## 📝 Screenshot
 ![To-Do List UI](screenshots/todo.png)
